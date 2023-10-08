@@ -22,13 +22,13 @@ document.querySelector(".tombol").addEventListener('click', function () {
         const {
           value: name
         } = Swal.fire({
-          title: 'Masukin nama kamu dulu',
+          title: 'Masukin nama adek dulu',
           input: 'text',
           inputLabel: '',
           showCancelButton: true,
           inputValidator: (value) => {
             if (!value) {
-              return 'Isi dulu dong beb'
+              return 'Isi dulu dong adek'
             } else {
               nama = value;
             }
@@ -74,7 +74,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                         })
                       } else if (result.isDenied) {
                         Swal.fire('Jahat banget emang ga kangen sama pacar sendiri', '', 'error').then(function () {
-                          Swal.fire('Yaudah deh bye!')
+                          Swal.fire('Yaudah!')
                         })
                       }
                     })
@@ -83,7 +83,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
               })
             } else if (result.isDenied) {
               Swal.fire(`Yakin ga suka sama ${sender}?`, '', 'error').then(function () {
-                Swal.fire('Yaudah deh bye!')
+                Swal.fire('Yaudah deh!')
               })
             }
           })
